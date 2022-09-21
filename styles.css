@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/* kleuren
+Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);
+
+De gebruikte fonts in de designs zijn Merriweather voor de headings en Roboto voor normale tekst.
+Deze fonts kun je gratis vinden op Google Fonts, zorg er alvast voor dat je deze importeert in jouw CSS-bestand en instelt
+als font-family.*/
+
+
+/*// Table of content
+1. Global styles
+2. Typography
+3. Layout
+    3.1 Reusable
+    3.2 Other
+4. Areas
+4.1 Header
+4.2 Introduction
+    4.3 Section 1
+    4.4 Section 2
+    4.5 Section 3
+    4.6 Section 4
+    4.7 Footer
+5 Media queries
+ //*/
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+
+
+/*--1. GLOBAL STYLES-----------------------------*/
+
+/*css-reset code:*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--2. TYPOGRAPHY-----------------------------*/
+
+.heading .h1 {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*https://cssgradient.io website om gradient achtergrondkleuren te genereren*/
+.gradient-background-color {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(225deg, rgba(2, 0, 36, 1) 0%, rgba(39, 34, 205, 1) 35%, rgba(87, 34, 205, 1) 100%);
+}
+
+/*--3. LAYOUT-----------------------------*/
+
+/*/-------------3.1 Reusable----------------------------/*/
+
+/*/-------------3.2 Other----------------------------/*/
+
+/*--4. AREAS-----------------------------*/
+
+/*/-------------4.1 Navigation and header----------------------------/*/
+
+/*/-------------4.1.1  navigation----------------------------/*/
+
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 40px;
+    color: white;
+}
+
+.navigation-content {
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 400px;
+    justify-content: flex-end;
+    gap: 3rem;
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+
+/*/-------------4.1.2 header----------------------------/*/
+.document-titel-area {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px 40px 0;
+    font-family: 'Merriweather', serif;
+}
+
+.document-titel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+}
+
+.document-under-titel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.document-titel-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+    border-radius: 40px;
+    background-color: #fc4145;
+    border: #fc4145;
+    color: white;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.document-titel-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60px;
+}
+
+/*styles voor de driehoek onder de header
+.triangle{
+        width: 0;
+    height: 0;
+    border-width: 0 496px 116px 0;
+    border-color: transparent #FF0000 transparent transparent;
+    border-style: solid;
+}*/
+
+/*/-------------4.2 Introduction---------------------------- /*/
+
+.content-introduction {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-right: 70px;
+}
+
+.p-introduction {
+    text-align: center;
+    padding: 40px 40px;
+    font-size: 22px;
+    line-height: 2em;
+    text-indent: 50px;
+    font-family: 'Merriweather', serif;
+    color: #5722CD;
+    font-weight: bold;
+}
+
+.p2-introduction {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/*/ -------------4.3 Section 1---------------------------- /*/
+
+/*/ -------------4.4 Section 2 work history---------------------------- /*/
+
+.container-workhistory {
+    background-color: #F3F6F9;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.content-workhistory{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.item1-workhistory{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+.title-workhistory {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    padding-top: 120px;
+    margin-top: 20px;
+    width: 290px;
+}
+
+.p-workhistory {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-left: 50px;
+    width: 290px;
+    font-weight: bold;
+}
+
+.content-workhistory-reverse{
+    flex-direction: row-reverse;
+}
+
+.squiggle-workhistory {
+    padding-left: 50px;
+    padding-top: 12px;
+    padding-bottom: 28px;
+    width: 100px;
+}
+
+.a-workhistory-rollingstone {
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #5722CD;
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: 290px;
+}
+
+.image-workhistory {
+    width: 600px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+    rotate: 0.6deg;
+    margin: 30px 40px;
+    justify-content: space-between;
+}
+
+.image-workhistory-2{
+    rotate: -0.6deg;
+}
+
+/*/ -------------4.5 Section 3 services ---------------------------- /*/
+.container-services {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 60px;
+}
+
+.item-services {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    border: 1px solid #5722CD;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+    padding: 40px 30px;
+    margin: 20px 20px;
+}
+
+.img-services {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 3px;
+}
+
+.title-services {
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    color: #5722CD;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.p-services {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    line-height: 18px;
+    color: #7A7A7A;
+}
+
+/*/ -------------4.6 Section 4 contactform---------------------------- /*/
+.container-contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(225deg, rgba(2, 0, 36, 1) 0%, rgba(39, 34, 205, 1) 35%, rgba(87, 34, 205, 1) 100%);
+}
+
+.text-contact {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    padding-top: 70px;
+    padding-bottom: 12px;
+}
+
+.underline-text-contact {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 12px;
+    padding-bottom: 40px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+}
+
+#full-name, #email {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#message-box-data {
+    box-sizing: border-box;
+    padding-bottom: 90px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.full-name {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.e-mail {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.message-box {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.submit-button {
+    margin-top: 42px;
+    border-radius: 40px;
+    width: 200px;
+    padding: 12px 20px;
+    background-color: #fc4145;
+    color: white;
+    border: #fc4145;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin-left: 33%;
+    margin-bottom: 40px;
+}
+
+/*/ -------------4.7 Footer---------------------------- */
+footer {
+    background-color: black;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*--5 MEDIA QUERIES -----------------------------*/
+
+
+
